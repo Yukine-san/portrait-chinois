@@ -1,0 +1,333 @@
+/* Convention à respecter */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Paramètres CSS de base de la page */
+body {
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    /*overflow: hidden;*/
+}
+
+/* Retire la barre verticale de scroll*/
+html {
+    scrollbar-width: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Paramètres CSS de la première partie de la page */
+.deb {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/carton.png);
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.big {
+    font-size: 10rem;
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+    color: rgb(255, 251, 0);
+    margin: 0%;
+    text-align: center;
+    padding-top: 25vh;
+    right: 39.5%;
+    position: static;
+}
+
+/* Paramètres CSS de l'image 'link.png' */
+.fil {
+    position: static;
+    width: 20%;
+    height: auto;
+    margin-inline: 40%;
+    margin-top: 9%;
+    filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
+}
+
+.fil:hover {
+    transform: scale(1.05);
+    filter: none;
+    cursor: pointer;
+}
+
+/* Paramètres CSS des analogies */
+.box {
+    height: 1400h;
+    width: 100%;
+}
+
+.if {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(img/paper.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.be {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/paper.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    -webkit-text-stroke: 0.75px rgb(255, 255, 255);
+    color: #e593aa;
+    margin: 0;
+    text-align: center;
+    padding-top: 50vh;
+    right: 39.5%;
+    position: static;
+}
+
+.val {
+    -webkit-text-stroke: 0.75px #ffffff;
+    color: #7bcee2;
+    margin: 0;
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    right: 39.5%;
+    position: static;
+}
+
+/* Suppresion des puces de la liste */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Paramètres CSS des illustrations*/
+.illu {
+    margin-left: 10%;
+    float: left;
+    border: solid 4px orange;
+    width: 20%;
+    height: 50%;
+    margin-bottom: 0%;
+}
+
+/* Paramètres CSS du texte explicatif*/
+.txt {
+    display: flex;
+    margin-top: 1%;
+    text-align: justify;
+    font-family: 'Crete Round', serif;
+    font-size: 130%;
+    padding-left: 2%;
+    margin-right: 20%;
+    max-height: 80px;
+}
+
+/* Paramètres CSS des flèches*/
+.arrow {
+    transform: scale(0.1);
+    right: 0%;
+    margin-top: 7%;
+    position: absolute;
+
+}
+
+.arrow:hover {
+    transform: scale(0.15);
+    filter: none;
+    cursor: pointer;
+}
+
+.arrow2 {
+    transform: scale(0.1);
+    right: 0%;
+    margin-top: 7%;
+    position: absolute;
+
+}
+
+.arrow2:hover {
+    transform: scale(0.15);
+    filter: none;
+    cursor: pointer;
+}
+
+/* Paramètres CSS des boutons 'découvrir' */
+.bttn {
+    text-align: center;
+    width: 100vw;
+}
+
+.dscvr {
+    color: #ffd1db;
+    position: absolute;
+    left: 45%;
+    top: 65%;
+    width: auto;
+    height: auto;
+    padding: 1%;
+    text-decoration: none;
+    background-color: #ea2e63;
+    border-radius: 11px;
+    filter: drop-shadow(0 0 0.6rem rgb(12, 12, 12));
+}
+
+.dscvr:hover {
+    background-color: #ba0438;
+    transform: scale(1.05);
+}
+
+/* Paramètres CSS du pied de page */
+footer {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/carton.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    width: 32%;
+    height: min-content;
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgb(24, 23, 23);
+    color: rgb(255, 251, 0);
+    margin-left: 34%;
+    margin-bottom: 30px;
+    margin-top: 0%;
+}
+
+.part {
+    width: 12.5%;
+    text-align: center;
+    height: auto;
+    margin: 0%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: rgb(24, 23, 23);
+    color: rgb(255, 251, 0);
+    font-family: 'Crete Round', serif;
+    margin-left: 43%;
+}
+
+/* Paramètres CSS du formulaire*/
+legend {
+    background-color: rgb(255, 251, 0);
+    color: rgb(24, 23, 23);
+    padding: 3px 6px;
+}
+
+fieldset {
+    color: #fff;
+    background-color: rgb(24, 23, 23);
+    width: 500px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-color: rgb(255, 251, 0);
+    border-left: 5px solid rgb(255, 251, 0);
+}
+
+.frm {
+    font-family: 'Crete Round', serif;
+    padding-top: 10%;
+    padding-left: 31%;
+    padding-bottom: 5%;
+}
+
+.in {
+    margin-bottom: 7px;
+}
+
+/* Paramètres CSS du bouton d'envoi*/
+.valide {
+    font-size: 1.1rem;
+    color: rgb(24, 23, 23);
+    border: none;
+    background-color: rgb(255, 251, 0);
+    padding: auto;
+    margin-left: 40%;
+    cursor: pointer;
+}
+
+/* Paramètres CSS des crédits*/
+h3 {
+    margin: 0%;
+}
+
+.crdt {
+    margin-right: 10%;
+    width: 100vw;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Crete Round', serif;
+}
+
+.open-button {
+    border-radius: 4px;
+    position: absolute;
+    right: 0%;
+    height: 15vh;
+    width: 3vw;
+    background-color: #555;
+    color: white;
+    border: none;
+    opacity: 0.9;
+    cursor: pointer;
+    font-family: 'Crete Round', serif;
+    font-size: 1.1rem;
+}
+
+.crdt-popup {
+    border-radius: 4px;
+    background-color: rgb(130, 238, 188);
+    display: none;
+    position: absolute;
+    height: 30vh;
+    width: 100wh;
+    border: 1px solid rgb(1, 70, 38);
+    text-align: center;
+}
+
+.btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+.btn {
+    margin-left: 99%;
+    color: white;
+    padding: 3px 3px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.cancel {
+    background-color: red;
+}
+
+.vertical {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}

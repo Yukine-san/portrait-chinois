@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png" /> <!-- Icône de la page -->
+    <title>Portrait Chinois</title> <!-- Titre de la page  -->
+    <link rel="stylesheet" href="assets/css/sheets.css"> <!-- Feuille CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Importation des polices d'écriture Montserrat et Raleway -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crete+Round:wght@300;600&family=Raleway:ital,wght@0,100;0,900;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="deb">
+        <!-- Première partie de la page -->
+        <h1 class="big">Mon portrait chinois</h1>
+        <img class="fil" src="img/link.png" alt="Cliquer pour faire défiler la page vers le bas">
+    </div>
+    <ul class="box" id="scroll">
+        <!-- Emplacement des analogies -->
+    </ul>
+    <footer>
+        <!-- Pied de page -->
+        <h2>Envie de Prolonger l'aventure ?</h2>
+        <p class="part">Alors participez-y !</p>
+        <form class="frm" id="form">
+            <fieldset>
+                <!-- Formulaire pour rajouter une analogie -->
+                <legend>Rajouter votre analogie</legend><br>
+                <label for="thm">Si j'étais</label>
+                <input class="in" type="text" id="thm" alt="Entrez une analogie">
+                <label for="ana">, je serais</label>
+                <input class="in" type="text" id="ana" alt="Entrez une valeur d'analogie">
+                <br>
+                <textarea class="int" id="mark" rows="3" cols="60" placeholder="Explications"
+                    alt="Entrez une explication de l'analogie"></textarea><br>
+                <label for="url">URL Image : </label>
+                <input class="in" type="text" id="url"
+                    alt="Entrez une URL pour ajouter une image descriptive de l'analogie"><br>
+                <br>
+                <button class="valide" type="button" alt="Cliquez pour envoyer votre analogie">Envoyer</button><br>
+                <div id="envoi"></div>
+            </fieldset>
+        </form>
+        <button alt="Cliquez pour afficher les crédits" class="open-button" onclick="openCrdt()">
+            <p class="vertical">Crédit</span>
+        </button> <!-- Crédits -->
+        <div class="crdt-popup" id="mycrdt">
+            <button alt="Cliquez pour fermer les crédits" type="button" class="btn cancel"
+                onclick="closeCrdt()">X</button>
+            <h3>Crédits</h3>
+            <p class="crdt"><a target="_blank"
+                    href="https://open.spotify.com/track/1ixbwbeBi5ufN4noUKmW5a?si=e18f10485b704593">Intégration Paper
+                    Planes</a> : © Spotify<br><a target="_blank"
+                    href="http://www.christophelesage.com/gattaca/img/affiche.png">affiche.png</a> : ©
+                christophelesage.com ; <a
+                    href="https://static.displate.com/857x1200/displate/2020-02-19/2527bbe1f15868dd91b59324fb2ff161_01107dee6d9a31db72549845ed9a8eed.jpg"
+                    target="_blank">italy.webp</a> : © Martin Wickstrom ; <a
+                    href="https://fr.web.img2.acsta.net/pictures/20/08/14/09/31/2543400.jpg"
+                    target="_blank">wawwa.jpg</a> : © HBO ; <a
+                    href="https://static.displate.com/857x1200/displate/2020-08-11/52a7040d83706f8003a6af231c472935_0cbea7a63bcb3a854fa9e1876bc552a0.jpg"
+                    target="_blank">holly.png</a> : © Waverley Jane ; <a target="_blank"
+                    href="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/81dec4133402641.61bc784ee18da.jpg">voguing.png</a>
+                : © Alina Gradinar ; <a
+                    href="https://cdn.radiofrance.fr/s3/cruiser-production/2018/06/b46dcefa-3ee0-4a63-a99c-5acb4dd558da/1136_voyageur_contemplant_une_mer_de_nuages_de_caspar_david_friedrich054_eps0588.jpg"
+                    target="_blank">nuage.jpg</a> : © AFP<br><a target="_blank"
+                    href="https://cdn-icons-png.flaticon.com/512/271/271210.png">arrow.png & arrow1.png</a> : ©
+                flaticon.com<br><a target="_blank"
+                    href="https://as2.ftcdn.net/v2/jpg/01/03/31/13/1000_F_103311316_pX3ldSFoFLQFz8JBOLVIZioO586doKDU.jpg">Carton.png</a>
+                : © Adobe Stock<br><a target="_blank"
+                    href="https://cdn.wallpapersafari.com/53/85/XT6f5H.jpg">Paper.png</a> : © Wallpapersafari.com<br><a
+                    target="_blank" href="http://ekladata.com/5TNsIprWkFX-lvxwb_FqeP1BB08.png">link.png</a> : ©
+                http://heidi-nala.eklablog.com/<br><br>© 2021 Tous droits réservés par Théophane de Coattarel</p>
+        </div>
+    </footer>
+    <script src="analogies.json"></script> <!-- Script JSON -->
+    <script src="script.js"></script> <!-- Script JS -->
+</body>
+
+</html>
